@@ -41,5 +41,6 @@ main p {
     main {
     flex-direction: column;
     text-align: center;
+    margin-left: 10%;
     }
   }
