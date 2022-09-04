@@ -4,22 +4,25 @@
     box-sizing: border-box;
     font-family: 'Times New Roman', Times, serif;
 }
+
+
 body {
     background-color: #e4a479 ;
 }
 
+
+
 main {
     font-size: 20px;
-        position: absolute;
-        top: 400px;
-        width: 1450px;
-        left: 50%;
-        transform: translate(-50%);
-        background-color: bisque;
+    position: absolute;
+    top: 400px;
+    background-color: bisque;
     line-height: 1.5;
+    margin: 0 20px;
     }
 
 h2 {
+    font-size: 26px;
     text-align: center;
 }
 
@@ -45,19 +48,15 @@ main a:hover {
 
 .link {
     margin:15px;
+    text-align: center;
 }
 .article {
-    margin: 30px 100px;
+    margin: 5%;
 }
 
 footer {
-    
-    position: absolute;
-    top: 1560px;
     width: 100%;
     height: 30px;
- text-align: center;
+    text-align: center;
     background-color: #e4a479;
-    color: wheat;
-    font-size: 20px;
 }
