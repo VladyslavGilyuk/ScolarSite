@@ -5,22 +5,20 @@
     font-family: 'Times New Roman', Times, serif;
 }
 body {
-    background-color: #e4a479 ;
+    background-color: #e4a479;
 }
 main {
-font-size: 20px;
+    font-size: 20px;
     position: absolute;
     top: 400px;
-    width: 1450px;
-    left: 50%;
-    transform: translate(-50%);
     background-color: bisque;
-line-height: 1.5;
+    line-height: 1.5;
+    margin: 0 20px;
 }
 
 .EduForm, .workProf, .research {
     display: grid;
-    grid-template-columns: 725px 725px; 
+    grid-template-columns: 1fr 1fr; 
     margin: 20px;
 }
 
@@ -45,13 +43,23 @@ ul{
   
 }
 footer {
-    
-    position: absolute;
-    top: 1800px;
+
     width: 100%;
     height: 30px;
- text-align: center;
+    text-align: center;
     background-color: #e4a479;
-    color: wheat;
-    font-size: 20px;
 }
+
+
+
+@media screen and (max-width: 1100px) {
+    h2 {
+  font-size: 20px;
+    }
+  }
+
+@media screen and (max-width: 767px) {
+    .EduForm, .workProf, .research{
+        grid-template-columns: 1fr; 
+    }
+  }
