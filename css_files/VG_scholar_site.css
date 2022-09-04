@@ -12,9 +12,10 @@ main {
     position: absolute;
     top: 400px;
     display: flex;
-    width: 950px;
-    left: 50%;
-transform: translate(-50%);
+    align-items: center;
+    justify-content: center;
+ margin-left: 20%;
+ margin-right: 10%;
 }
 
 main img {
@@ -22,8 +23,23 @@ main img {
     border: 1px solid brown;
 }
 main p {
-    font-size: 22px;
+    font-size: 20px;
     line-height: 1.5;
     margin-left:15px;
     margin-top: 10px;
 }
+
+.container-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+@media screen and (max-width: 970px) {
+    main {
+    flex-direction: column;
+    text-align: center;
+    }
+  }

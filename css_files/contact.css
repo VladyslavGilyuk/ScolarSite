@@ -9,12 +9,10 @@ body {
     background-color: bisque;
 }
 main {
-
     position: absolute;
     top: 465px;
     width: 100%;
-    text-align: center;
-   
+    text-align: center; 
 }
 
 main p {
@@ -23,3 +21,20 @@ main p {
     margin-left:15px;
     margin-top: 10px;
 }
+.flex-container {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+
+
+
+@media screen and (max-width: 767px) {
+    .flex-container {
+    flex-direction: column;
+    }
+    main {
+        top: 445px; 
+    }
+  }
