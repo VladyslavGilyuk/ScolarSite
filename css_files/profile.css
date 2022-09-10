@@ -1,65 +1,107 @@
+/*General About Styles*/
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Times New Roman', Times, serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
 }
+
 body {
-    background-color: #e4a479;
+  background-color: #e4a479;
 }
+
 main {
-    font-size: 20px;
-    position: absolute;
-    top: 400px;
-    background-color: bisque;
-    line-height: 1.5;
-    margin: 0 20px;
-}
-
-.EduForm, .workProf, .research {
-    display: grid;
-    grid-template-columns: 1fr 1fr; 
-    margin: 20px;
-}
-
-.form, .edu {
-    margin-left: 10px;
-}
-
-li{
-    margin: 10px;
-  }
-  
-ul{
-    margin: 30px 0px;
-  }
-  .workProf li {
-      margin-left:50px;
-
-  }
-
-.research h2 {
-    margin-bottom: 30px;
-  
-}
-footer {
-
-    width: 100%;
-    height: 30px;
-    text-align: center;
-    background-color: #e4a479;
-}
-
-
-
-@media screen and (max-width: 1100px) {
-    h2 {
   font-size: 20px;
-    }
+  position: absolute;
+  top: 400px;
+  background-color: bisque;
+  line-height: 1.5;
+  margin: 0 20px;
+}
+
+ul {
+  margin: 30px 0;
+}
+
+li {
+  margin: 10px;
+}
+
+/* display EN & FR as 2 columns */
+.EduForm, .workProf, .research {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  margin: 20px;
+}
+
+/*distance the EN & FR columns*/
+.edu, .work, .researchEn {
+  margin-right: 25px;
+}
+
+/* Work Section*/
+.workProf li {
+    margin-left:50px;
+}
+
+/* Research Section*/
+.research h2 {
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+/*Footer Section*/
+footer {
+  width: 100%;
+  height: 30px;
+  text-align: center;
+  background-color: #e4a479;
+}
+
+/*Smaller screens*/
+@media screen and (max-width: 1100px) {
+  h2 {
+    font-size: 20px;
   }
+  }
+
 
 @media screen and (max-width: 767px) {
-    .EduForm, .workProf, .research{
-        grid-template-columns: 1fr; 
-    }
+  main {
+    top: 370px;
+   }
+   /*change 2 colums to 1*/
+  .EduForm, .workProf, .research{
+    grid-template-columns: 1fr; 
   }
+
+  .edu, .work, .researchEn {
+    margin-right: 0;
+  }
+  }
+
+/*Phone styles*/
+@media screen and (max-width: 480px) {
+  main {
+    top: 235px;
+    font-size: 16px;
+    line-height: 1.2;
+    margin: 0 10px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  ul{
+    margin: 15px 0;
+  }
+
+  .workProf li {
+    margin-left: 30px;
+  }
+
+  footer {
+    height: 10px;
+  }
+}
