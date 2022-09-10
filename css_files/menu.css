@@ -16,8 +16,8 @@
 }
 
 
-.navbar a {
-  color: #f2f2f2;
+.btn {
+  color: white;
   text-align: center;
   padding: 25px 19px;
   text-decoration: none;
@@ -25,10 +25,13 @@
   
 }
 
-.navbar a:hover {
+.btn:hover {
   color: green;
 }
 
+.active {
+  color: green;
+}
 
 header {
     width: 100%;
